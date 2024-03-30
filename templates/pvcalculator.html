@@ -1,0 +1,16 @@
+{% extends "layout.html" %}
+
+{% block content %}
+
+    <h1>Login Page</h1><br>
+
+    Don't have a login? <a href="{{ url_for('register') }}">Register here</a><br>
+
+    <form method="POST" action="">
+        {{ form.hidden_tag() }}
+        {{ form.username }}
+        {{ form.password }}
+        {{ form.submit }}
+    </form>
+
+{% endblock %}
