@@ -1,0 +1,32 @@
+{% extends "layout.html" %}
+
+{% block content %}
+
+
+<section>
+    <h2>Energie: PV opbrengst</h2><br>
+    <p>Bereken de jaarlijkse opbrengst van zonnepanelen.</p><br>
+
+    <div>
+        <input type="number" id="num" placeholder="0"></input>
+        <input type="number" id="wp" placeholder="0"></input>
+        <input type="number" id="lat" placeholder="0"></input>
+        <input type="number" id="lon" placeholder="0"></input>
+        <input type="button" value="Bereken" onclick="pvcalc()">
+    </div>
+    <br>
+
+    De uitkomst is: <label id="uitkomst"></label> kWh.
+
+    <script>
+        function pvcalc() {
+            var num = document.getElementById("num").value;
+            var wp = document.getElementById("wp").value;
+            var output = document.getElementById("uitkomst");
+            output.innerHTML = num*wp;
+        }
+    </script>
+
+</section>
+
+{% endblock %}

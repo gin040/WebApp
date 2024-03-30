@@ -1,0 +1,21 @@
+{% extends "layout.html" %}
+
+{% block content %}
+
+<div class="userform">
+    <h2>Inloggen</h2><br>
+
+    Nog niet geregistreerd? <a href="{{ url_for('register') }}">Registeer hier</a><br>
+
+    <form method="POST" action="">
+        {{ form.hidden_tag() }} <br>
+        <label>Gebruikersnaam:</label><br>
+        {{ form.username }} <br>
+        <label>Wachtwoord:</label><br>
+        {{ form.password }} <br><br>
+        {{ form.submit }} 
+    </form>
+
+</div>
+
+{% endblock %}

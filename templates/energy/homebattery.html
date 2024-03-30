@@ -2,25 +2,24 @@
 
 {% block content %}
 
-<section>
-    <h2>Energie: PV opbrengst</h2><br>
-    <p>Bereken de jaarlijkse opbrengst van zonnepanelen.</p><br>
+    <h2>PV calculator</h2><br>
+    <p>Bereken de opbrengst van zonnepanelen.</p>
 
     <form class="div tool" hx-post="/resultaat" hx-target="#result">
         <label>Aantal zonnepanelen:</label><br>
-        {{ form.num }} <br><br>
+        {{ form.num }} <br>
         <label>Wattpiek per paneel:</label><br>
-        {{ form.wp }} <br><br>
+        {{ form.wp }} <br>
         <label>Hellingshoek zonnepaneel</label><br>
-        {{ form.lat }} <br><br>
+        {{ form.lat }} <br>
         <label>Richting zonnepaneel (-180 tot 180 graden):</label><br>
         {{ form.lon }} <br><br>
-        {{ form.submit }}<br><br>
+        {{ form.submit }}
     </form>
 
-    <h3>Resultaat</h3><br>
-    <p>De installatie wekt jaarlijks <label id="result"></label> kWh op.</p>
-    
-</section>
+    <h3>Resultaten</h3><br>
+    <label>De zonnepanelen wekken jaarlijks op:</label><br><br>
+    <label id="result"></label>kWh.
+
 
 {% endblock %}

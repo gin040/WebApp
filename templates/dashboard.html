@@ -1,10 +1,31 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
-</head>
-<body>
-$END$
-</body>
-</html>
+{% extends "layout.html" %}
+
+{% block content %}
+
+<a href="{{ url_for('logout') }}">Uitloggen</a>
+
+<section>
+    <h2>Overzicht opgeslagen projecten:</h2><br>
+    <table>
+        <thead>
+            <th>Projectnaam</th>
+            <th>Applicatie</th>
+            <th>Datum</th>
+        </thead>
+        <tbody>
+            <td>projectnaam #1</td>
+            <td>applicatie #1</td>
+            <td>datum #1</td>
+        </tbody>
+    </table>
+
+</section>
+
+<a href="/pvcalculator">
+    <div class="div dashboard">
+        <h3>Zonnepaneel</h3><br>
+        <p>Berekenen opbrengst zonnepanelen</p>
+    </div>
+</a>
+
+{% endblock %}

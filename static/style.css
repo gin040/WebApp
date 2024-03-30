@@ -1,0 +1,157 @@
+/* GLOBAL */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    }
+
+/* ELEMENTS */
+
+body {
+    font-family: Arial, sans-serif, Helvetica;
+    background-color: #f1f1f1;
+    }
+
+header h1 {
+    font-size: 48;
+    margin-bottom: 30px;
+    }
+
+header p {
+    font-size: 22px;
+    }
+
+header button {
+    text-align: right;
+}
+
+main {
+    width: 960px;
+    margin: auto;
+    padding: 30px 20px;
+    min-height: calc(100vh - 194px - 58px);
+    justify-content: center;
+    }
+
+section {
+    width: 960px;
+    margin:auto;
+    justify-content: left;
+    padding: 20px;
+    background-color: #c9c3b1;
+    border-radius: 10px;
+
+}
+
+article {
+    margin: auto;
+    background-color: #c9c3b1;
+    width: 640px;
+    margin-bottom: 20px;
+    padding: 20px;
+    border-radius: 10px;
+    }
+
+article h3 {
+    margin: 10px 0 10px 0;
+    }
+
+article p {
+    margin-top: 16px;
+    line-height: 24px;
+    }
+    
+footer  {
+    text-align: center;
+    background-color: #685c47fa;
+    color: #fff;
+    padding: 20px;
+    }
+
+label {
+    size: 10;
+}
+
+/* CLASSES */
+
+.topheader {
+    display:flex; 
+    justify-content: space-between; 
+    flex-direction: row;
+    background-color: #f1f1f1;
+    color: #000;
+    padding: 5px;
+    }
+
+.bottomheader {
+    padding: 5px;
+    background-color: #685c47fa;
+    color: #fff;
+    padding: 5px;
+    
+}
+
+.userform {
+    /* border-style: solid;
+    border-width: 1px;
+    border-color: rgb(87, 76, 52); */
+    border-radius: 10px;
+    background-color: #c9c3b1;
+    padding: 20px;
+    width: 400px;
+    color: #000;
+    margin: auto;
+    
+  }
+
+.form-style-email { 
+    width: 500px;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;  
+}
+
+.btn {
+  border: none;
+  background-color: inherit;
+  padding: 14px 28px;
+  font-size: 16px;
+  cursor: pointer;
+  display: inline-block;
+}
+
+.btn:hover {background: #c9c3b1;
+            border-radius: 5px;}
+
+.abtn {
+    text-decoration: none;
+    border: none;
+    background-color: inherit;
+    padding: 14px 28px;
+    font-size: 16px;
+    cursor: pointer;
+    display: inline-block;
+    
+}
+
+.home {
+    justify-self: left;
+}
+
+.abtn:visited {
+    text-decoration: none;
+    color: black;
+}
+
+.abtn:hover {
+    background: #c9c3b1;
+    border-radius: 5px;}
+
+.headertopright {justify-content: end;}
+
+.header {color: white;}
+.login {color: white;}
+.warning {color: orange;}
+.danger {color: red;}
+.default {color: black;}
